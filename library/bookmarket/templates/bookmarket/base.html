@@ -1,0 +1,45 @@
+{% load static %}
+<html>
+    <head>
+        <title>Book store</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/library.css' %}">
+    </head>
+    <body>
+        
+        <div class="page-header">
+            <div class="logo">
+                <img src="../media/icons8-book-100.png" class="bookicon">
+                <a href="http://127.0.0.1:8000/" class="logotext">The biggest book store</a>
+            </div>
+
+            <form method="get">
+                <div class="search">
+                    <input type="text" name="q" placeholder="Поиск по заголовку или автору" value="{{ request.GET.q }}">
+                </div>
+            </form>
+
+            <div class="cartdiv">
+                <img src="../media/icons8-cart-64.png" class="carticon">
+                <a href="" class="cart">Корзина</a>
+            </div>  
+        </div>
+            <div class="row">
+                <div class="col-md-8">
+                {% block content %}
+                {% endblock %}
+                </div>
+            </div>
+        </div>
+        <script>
+            let form = document.forms[0]
+            search.onchange = function(){
+                form.submit()
+            }
+        </script>
+
+    </body>
+</html>

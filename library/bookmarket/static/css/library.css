@@ -1,0 +1,127 @@
+html{
+    overflow: hidden;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #e5e5f7;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 30px ), repeating-linear-gradient( #e2dfdf, #ccddd3 );
+    margin: 0;
+}
+.page-header{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #1E4C30;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    border: 0;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #1E4C30 30px ), repeating-linear-gradient( #1E4C30, #6EA584 );
+}
+.bookicon, .carticon{
+    filter: invert(1);
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 2vw;
+}
+.logotext{
+    font-size: 50px;
+    font-family: Anton;
+    color: white;
+}
+.logotext:hover{
+    text-decoration: none;
+    font-size: 60px;
+    font-family: Anton;
+    color: white;
+}
+
+.cartdiv{
+    margin-right: 5vw;
+}
+.cart{
+    font-family: Antonio;
+    color: white;
+    font-size: 20px;
+}
+.cart:hover{
+    font-family: Antonio;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.search input{ margin: 0;
+    width: 35vw;
+    height: 4vh;
+    border: 0;
+    border-radius: 10px;
+}
+
+.submit{
+    width: 5vw;
+    height: 4vh;
+    border: 0;
+    border-radius: 10px;
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 15vw;
+    border-radius: 30px;
+    padding: 0;
+    margin: 30px;
+    font-family: Anton;
+    
+}
+.good_image{
+    width: 100%;
+    height: 45vh;
+    border-radius: 30px;
+}
+.good_price{
+    color: #1E4C30;
+}
+.good_title a{
+    font-weight: bold;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+}
+.good_author{
+    font-weight: lighter;
+    margin-top: 0;
+}
+.to_stock{
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    border: 0;
+    background-color: #1E4C30;
+    color: white;
+    font-size: 25px;
+}
+.to_stock:hover{
+    font-size: 30px;
+}
+.col-md-8{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}

@@ -1,0 +1,12 @@
+{% extends 'bookmarket/base.html' %}
+{% block content %}
+{% for book in books %}
+    <div class="post">
+        <img class="good_image" src="{{ book.image.url}}">
+        <h1 class="good_price">{{book.price}} ₸</h1>
+        <h1 class="good_title"><a>{{book.name}}</a></h1>
+        <h3 class="good_author">{{book.author}}</h3>
+        <button class="to_stock">Add to cart</button>
+    </div>
+{% endfor%}
+{% endblock %}
